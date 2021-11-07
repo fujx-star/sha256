@@ -202,7 +202,7 @@ int main(){
         hash = HASH(message_extended,h,k);
         cout << "hash:" << hash << endl;
     }
-    while(hash.substr(0,30) != "000000000000000000000000000000");
+    while(hash.substr(0,30) != "000000000000000000000000000000");  //找出hash值前30位为0的输入
     cout << mes << endl;
     clock_t end_time = clock();
     cout << "The run time is: " <<(double)(end_time - start_time) / CLOCKS_PER_SEC << "s" << endl;
